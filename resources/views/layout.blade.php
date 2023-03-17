@@ -18,7 +18,7 @@
                 theme: {
                     extend: {
                         colors: {
-                            laravel: "#ef3b2d",
+                            laravel: "rgb(70, 70, 70)",
                         },
                     },
                 },
@@ -29,8 +29,13 @@
     <body class="mb-48">
         <nav class="flex justify-between items-center mb-4">
             <a href="/"
-                ><img class="w-24" src="{{ asset('images/logo.png') }}" alt="" class="logo"
+                ><img class="w-24" src="{{ asset('images/devgigs-logo.png') }}" alt="" class="logo"
             /></a>
+
+            {{-- <div class="tOQZbg" style="background: rgb(43, 43, 43);"></div>
+            <div class="tOQZbg" style="background: rgb(70, 70, 70);"></div>
+            <span class="S1PPyQ" style="font-weight: 400; font-style: normal; color: rgb(132, 109, 98); text-decoration: none;">d</span> --}}
+
             <ul class="flex space-x-6 mr-6 text-lg">
                 <li>
                     <a href="register.html" class="hover:text-laravel"
@@ -54,7 +59,7 @@
         <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
 
         <a
-            href="create.html"
+            href="/listings/create"
             class="absolute top-1/3 right-10 bg-black text-white py-2 px-5"
             >Post Job</a
         >
