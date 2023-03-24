@@ -19,10 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ListingController::class, 'index']);
 
 // Show Listings forms
-Route::get('/listings/create', [ListingController::class, 'create']); 
+Route::get('/listings/create', [ListingController::class, 'create'])->name('listings.create'); 
 
 //Store Listings
-Route::post('/listings', [ListingController::class, 'store']);
+Route::post('/listings', [ListingController::class, 'store'])->name('listings');
 
 //single listing
-Route::get('/listings/{listing}', [ListingController::class, 'show']);
+Route::get('/listings/{listing}', [ListingController::class, 'show'])->name('listings.listing');

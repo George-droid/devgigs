@@ -30,7 +30,7 @@ class ListingController extends Controller
     public function store(Request $request) {
         $formField = $request->validate([
             'title' => 'required',
-            'company' => ['required'],
+            'company' => ['required', Rule::unique('listings', 'company')],
             'location' => 'required',
             'website' => 'required',
             'email' => ['required', 'email'],

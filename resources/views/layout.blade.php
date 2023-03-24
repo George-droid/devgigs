@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="resources/css/app.js" />
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -27,7 +32,7 @@
         <title>DevGigs | Find Software Dev Jobs & Projects</title>
     </head>
     <body class="mb-48">
-        <nav class="flex justify-between items-center mb-4">
+        <nav class="flex justify-between items-center mb-4" style="height: 57px !important">
             <a href="/"
                 ><img class="w-24" src="{{ asset('images/devgigs-logo.png') }}" alt="" class="logo"
             /></a>
