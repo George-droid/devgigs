@@ -6,7 +6,7 @@
 
 
 <div class="customer">
-    <div class="lg:grid gap-4 space-y-6 md:space-y-0 mx-4">
+    <div class="lg:grid gap-2 space-y-6 md:space-y-0 mx-4">
     @unless(count($listings) == 0)
 
 
@@ -22,3 +22,4 @@
 </div>
 
 @endsection
+
